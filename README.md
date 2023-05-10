@@ -2,25 +2,18 @@
 
 ## Introduction
 
-Welcome to Sprint Challenge 5! Today, you'll practice using JavaScript to manipulate the DOM by fetching data from the network and building a section of a web page using "vanilla" JavaScript, without any frameworks.
+Welcome to Module 1 Project! Today, you'll practice using JavaScript to manipulate the DOM using "vanilla" JavaScript, without any frameworks.
 
-This experience will give you a taste of what your first task at a software company might feel like, and it matches the difficulty and scope of a take-home assignment during a hiring process for a Web Developer position.
+To succeed in this project, you'll need the following technical skills:
 
-Here's an overview of the tasks you need to complete:
-
-1. **Obtain** JSON data from a web service.
-1. **Combine** data obtained from different sources into a single data structure.
-1. **Render** repeatable components to the DOM using the combined data.
-
-To succeed in this challenge, you'll need the following technical skills:
-
-1. **Promises** and the ability to deal with asynchronous code.
-1. **Making HTTP requests** with Axios or fetch.
-1. **Looping over data** to populate a new data structure.
 1. **Selecting elements** and groups of elements from the DOM.
 1. **Creating new elements** and attaching them to the DOM.
-1. **Altering the text content** and class names of elements based on certain events.
-1. **Adding simple interactivity** to elements via event listeners.
+1. **Looping** over arrays and lists of DOM elements.
+1. **Generating pseudo-random numbers** using the Math object.
+1. **Using data** and template literals to build text content for elements in the DOM.
+1. **Manipulating attributes** on elements.
+1. **Using setInterval** to schedule repeated actions.
+1. **Using clearInterval** to cancel a setInterval.
 
 Additionally, the following soft skills will greatly impact your performance:
 

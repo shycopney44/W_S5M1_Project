@@ -1,8 +1,6 @@
-const { screen, fireEvent, within } = require('@testing-library/dom')
 require('@testing-library/jest-dom')
+const { screen } = require('@testing-library/dom')
 const { moduleProject1 } = require('./frontend/index')
-
-const waitForOptions = { timeout: 150 } // so Codegrade does not take forever
 
 jest.useFakeTimers()
 
@@ -133,7 +131,11 @@ describe('Sprint 5 Module', () => {
     })
   })
   describe('Task 6 - Tabbing through widgets', () => {
-
-
+    test('👉 [11] Can tab through widgets', () => {
+      const widgets = document.querySelectorAll('.widget')
+      widgets.forEach((w, idx) => {
+        expect(w.getAttribute('tabindex')).toBe(`${idx + 1}`)
+      })
+    })
   })
 })
