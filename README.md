@@ -197,9 +197,9 @@ Use the random person to construct DOM in the following format:
 </div>
 ```
 
-Note how the string is formatted, taking careful note of punctuation and proper placement of the last "and".
+Note how the string is formatted, taking careful note of punctuation and proper placement of the "and" before the last friend.
 
-If the person is unlucky enough not to have friends, the paragraph renders to the DOM like so:
+If the person is unlucky enough not to have any friends inside their `friends` property, the paragraph renders to the DOM like so:
 
 ```html
 <p>Luis Gonzalez was born in 1990 and has no friends.</p>
@@ -215,6 +215,19 @@ If the person is unlucky enough not to have friends, the paragraph renders to th
   <summary>Click to read</summary>
 
   ---
+
+We need to be able to tab between widgets using the Tab key, which helps make the site more accessible.
+
+In order to do this, select the first widget from the DOM and add give it a `tabindex` attribute of "1".
+
+The second one should have a `tabindex` of "2" and so on. Here is what the Countdown widget would look like as an example:
+
+```html
+<div class="countdown widget" tabindex="3">
+  <h3>Countdown</h3>
+  <p>Liftoff! 🚀</p>
+</div>
+```
 
   ---
 
