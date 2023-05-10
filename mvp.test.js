@@ -1,9 +1,10 @@
 const { screen, fireEvent, within } = require('@testing-library/dom')
 require('@testing-library/jest-dom')
-const { quotes, adverbs, nouns, verbs, people } = require('./frontend/data')
 const { moduleProject1 } = require('./frontend/index')
 
 const waitForOptions = { timeout: 150 } // so Codegrade does not take forever
+
+jest.useFakeTimers()
 
 beforeEach(() => {
   jest.spyOn(global.Math, 'random').mockReturnValue(0.1);
@@ -35,16 +36,29 @@ afterEach(() => {
   jest.spyOn(global.Math, 'random').mockRestore();
 })
 
-test('sanity', () => {
-  screen.debug()
+describe('Sprint 5 Module', () => {
+  describe('Countdown Widget',() => {
+    test('Counts from "T-minus 5..." to "Liftoff! 🚀"', () => {
+      screen.getByText('Countdown')
+      screen.getByText('T-minus 5...')
+      jest.advanceTimersByTime(1000)
+      screen.getByText('T-minus 4...')
+      jest.advanceTimersByTime(1000)
+      screen.getByText('T-minus 3...')
+      jest.advanceTimersByTime(1000)
+      screen.getByText('T-minus 2...')
+      jest.advanceTimersByTime(1000)
+      screen.getByText('T-minus 1...')
+      jest.advanceTimersByTime(1000)
+      screen.getByText('Liftoff! 🚀')
+    })
+  })
 })
-
 // async function firstCardRender() {
 //   const bob = await screen.findByText('Bob Johnson', {}, waitForOptions)
 //   expect(bob).toBeInTheDocument()
 // }
 
-// describe('Sprint Challenge 5', () => {
 //   describe('Sprint setup', () => {
 //     test('👉 [1] Version of challenge is valid', () => {
 //       const versions = ['1.0.0']
