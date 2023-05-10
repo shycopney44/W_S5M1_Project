@@ -101,14 +101,14 @@ You will know your code is working correctly because some CSS will kick in for t
 
   ---
 
-Let's start by using a `console.log` to print the variable `quotes` to the console. Even though this variable is not declared inside `index.js`, it is defined because the `data.js` script loaded it into the global space shared by all scripts.
+Let's start by using a `console.log` to print the variable `quotes` to the console. Even though this variable is not declared anywhere in `index.js`, it is defined because the `data.js` script loaded it into the global space shared by all scripts.
 
-Now that we have determined we have access to an array of quotes, you will use `Math.random` (research how!) to generate a random index between 0 and 9. You will use this random index to grab one of the quotes inside the quotes array.
+Now that we have determined we have access to an array of quotes, you will use `Math.random` (research how!) to generate a random index between 0 and 9. You will use this random index to grab one of the quotes in the quotes array.
 
-Using JavaScript, use the random quote we selected to construct the following markup on the page:
+Use the random quote you selected to construct the following markup in the DOM:
 
 ```html
-<!-- the text will change depending on the quote -->
+<!-- the actual text will change depending on the quote -->
 <div class="quoteoftheday widget">
   <h3>Quote of the Day</h3>
   <div>Optimism is an occupational hazard of programming: feedback is the treatment.</div>
@@ -116,35 +116,60 @@ Using JavaScript, use the random quote we selected to construct the following ma
 </div>
 ```
 
-Some of the quotes have a `null` date because it is unknown. In those cases, the div containing the author should be in the following format:
+Some of the quotes have a `null` date because it is unknown. In such cases, the div containing the author should be in the following format:
 
 ```html
-<!-- the text will change depending on the quote -->
+<!-- the name will change depending on the quote -->
 <div>John Romero in an unknown date</div>
 ```
+
+  ---
+
+</details>
+
+#### Task 3
 
 <details>
   <summary>Click to read</summary>
 
   ---
 
-```html
-<div class="quoteoftheday widget" tabindex="1">
-  <h3>Quote of the Day</h3>
-  <div>Any sufficiently advanced technology is indistinguishable from magic.</div>
-  <div>Arthur C. Clarke in 1973</div>
-</div>
-```
+  ---
 
-#### Task 2
-
-#### Task 3
+</details>
 
 #### Task 4
 
+<details>
+  <summary>Click to read</summary>
+
+  ---
+
+  ---
+
+</details>
+
 #### Task 5
 
+<details>
+  <summary>Click to read</summary>
+
+  ---
+
+  ---
+
+</details>
+
 #### Task 6
+
+<details>
+  <summary>Click to read</summary>
+
+  ---
+
+  ---
+
+</details>
 
 ❗ Install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems right inside your editor.
 
