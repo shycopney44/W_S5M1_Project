@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Welcome to Module 1 Project! Today, you'll practice using JavaScript to manipulate the DOM using "vanilla" JavaScript, without any frameworks.
+Welcome to Module 1 Project! In this project, you will practice using "vanilla" JavaScript to manipulate the DOM, without any frameworks. Your goal is to build some widgets on a web-page, using only JavaScript.
 
-To succeed in this project, you'll need the following technical skills:
+To successfully complete this project, you will need the following technical skills:
 
 1. **Selecting elements** and groups of elements from the DOM.
 1. **Creating new elements** and attaching them to the DOM.
@@ -13,9 +13,8 @@ To succeed in this project, you'll need the following technical skills:
 1. **Using data** and template literals to build text content for elements in the DOM.
 1. **Manipulating attributes** on elements.
 1. **Using setInterval** to schedule repeated actions.
-1. **Using clearInterval** to cancel a setInterval.
 
-Additionally, the following soft skills will greatly impact your performance:
+In addition to these technical skills, the following soft skills will greatly impact your performance:
 
 1. Attention to detail. Make sure there isn't a single character out of place!
 1. Perseverance. Keep trying until you figure it out!
@@ -23,15 +22,15 @@ Additionally, the following soft skills will greatly impact your performance:
 
 ## Instructions
 
-During a hiring process for a Web Developer position, you have been given a take-home coding assignment. The task consists in building some widgets on a web-page, using JavaScript alone.
+You have been given a take-home coding assignment as part of a hiring process for a Web Developer position. Your task is to build some widgets on a web-page, using only JavaScript.
 
-You have been given a detailed [mock](todo) showing the desired end result.
+To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](todo) showing the desired end result.
 
-**To help you complete the task, two of your future team-members will provide you with instructions and advice.**
+Make sure to carefully read and follow their instructions. Good luck!
 
 ### 💾 DevOps Engineer
 
-Below, a DevOps Engineer will help you set up your local environment and launch the project:
+**Below, a DevOps Engineer will help you set up your local environment and launch the project:**
 
 This is a **full-stack web application** that comprises both back-end and front-end components. When deployed to production, the back-end part would run in the cloud (think Amazon Web Services or Azure), while the front-end would execute inside the user's web browser (like Chrome for Android, or Firefox for desktop).
 
@@ -45,7 +44,7 @@ As a front-end engineer, your focus is mainly on the files that load **on the us
 
 ### 🥷 Lead Developer
 
-Below, your Team Lead will discuss the tasks you need to complete.
+**Below, your Team Lead will discuss the tasks you need to complete.**
 
 Hey! Let's make sure you're up to speed with your **action items so far**.
 
