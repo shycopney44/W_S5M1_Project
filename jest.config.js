@@ -152,33 +152,6 @@ module.exports = {
   testEnvironmentOptions: {
     resources: 'usable',
     runScripts: 'dangerously',
-    html: `<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Sprint 5 Module 1 Project</title>
-  <style>
-    .card h4.closed~ul {
-      display: none;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Sprint 5 Module 1 Project</h1>
-  </header>
-  <section>
-    <div class="cards">
-      <!-- Learner cards are injected here by index.js script -->
-    </div>
-  </section>
-  <footer></footer>
-</body>
-
-</html>
-`
   },
 
   // Adds a location field to test results

@@ -1,6 +1,7 @@
-// This makes fetch and axios work in the tests
-const nodeFetch = require('node-fetch')
+const { quotes, adverbs, nouns, verbs, people } = require('./frontend/data')
 
-globalThis.fetch = nodeFetch
-globalThis.Request = nodeFetch.Request
-globalThis.Response = nodeFetch.Response
+globalThis.quotes = quotes
+globalThis.adverbs = adverbs
+globalThis.nouns = nouns
+globalThis.verbs = verbs
+globalThis.people = people

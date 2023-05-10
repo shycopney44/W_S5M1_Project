@@ -28,7 +28,7 @@ server.use((err, req, res, next) => { // eslint-disable-line
 server.listen(port, () => {
   console.log(`
 -------------------------------------------------------------------------
-See YOUR PROJECT in the browser, navigating to --> http://localhost:3003
+To see YOUR PROJECT in the browser, navigate to --> http://localhost:3003
 -------------------------------------------------------------------------
 `)
 })
