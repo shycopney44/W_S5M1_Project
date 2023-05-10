@@ -23,11 +23,11 @@ Additionally, the following soft skills will greatly impact your performance:
 
 ## Instructions
 
-On your first day as a junior web developer at a coding school, you have been assigned a ticket to complete. The task involves adding a new feature to the school's software platform.
+During a hiring process for a Web Developer position, you have been given a take-home coding assignment. The task consists in building some widgets on a web-page, using JavaScript alone.
 
-Specifically, you need to complete a page that displays a list of learners along with their basic information such as ID, name, email, and a list of mentors. Users should be able to click on a learner to highlight it, and the list of mentors for each learner should be expandable and collapsible. You can refer to the [full mockup](https://w-s5-challenge.herokuapp.com/) for the design and behavior of the page.
+You have been given a detailed [mock](todo) showing the desired end result.
 
-**To help you complete the task, several members of your team will provide you with instructions and advice.**
+**To help you complete the task, several members of your future team-members will provide you with instructions and advice.**
 
 ### 💾 DevOps Engineer
 
@@ -40,13 +40,13 @@ Below, your DevOps expert will help you set up your local environment and launch
 
 This is a **full-stack web application** that comprises both back-end and front-end components. When deployed to production, the back-end part would run in the cloud (think Amazon Web Services or Azure), while the front-end would execute inside the user's web browser (like Chrome for Android, or Firefox for desktop).
 
-As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular project, these files live inside the `frontent` folder (but there are many ways to organize a project). The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node app, with a `package.json` file at the root containing meta-information and some useful commands developers can use to launch and test the application.
+As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular project, these files live inside the `frontent` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node app, with a `package.json` file at the root containing meta-information about the project.
 
 1. You will **clone this repository** to your computer, which will allow you to run the software locally for development and testing purposes.
 
-1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries listed inside `package.json`. Some of these packages are needed for the back-end to do its job of serving JSON data and front-end assets. Other libs help with things like testing and linting your code.
+1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries listed inside `package.json`. Some of these packages are needed for the back-end to do its job of serving the website you will be working on. Other libs help with things like testing and linting your code.
 
-1. After successful installation you will run, in separate terminals, the two scripts found inside `package.json`. **Execute `npm start` in your first terminal, and `npm test` in your second**. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3001`**. The term "localhost" means "your machine", and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
+1. After successful installation you will run, in separate terminals, the two scripts referenced inside `package.json`. To do this, **execute `npm start` in your first terminal, and `npm test` in your second**. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
 
 My job assisting you with local setup of the app is done! You will speak to our designer next.
 
