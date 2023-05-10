@@ -27,16 +27,11 @@ During a hiring process for a Web Developer position, you have been given a take
 
 You have been given a detailed [mock](todo) showing the desired end result.
 
-**To help you complete the task, several members of your future team-members will provide you with instructions and advice.**
+**To help you complete the task, two of your future team-members will provide you with instructions and advice.**
 
 ### 💾 DevOps Engineer
 
-Below, your DevOps expert will help you set up your local environment and launch the project.
-
-<details>
-  <summary>Click to read</summary>
-
-  ---
+Below, a DevOps Engineer will help you set up your local environment and launch the project:
 
 This is a **full-stack web application** that comprises both back-end and front-end components. When deployed to production, the back-end part would run in the cloud (think Amazon Web Services or Azure), while the front-end would execute inside the user's web browser (like Chrome for Android, or Firefox for desktop).
 
@@ -48,87 +43,81 @@ As a front-end engineer, your focus is mainly on the files that load **on the us
 
 1. After successful installation you will run, in separate terminals, the two scripts referenced inside `package.json`. To do this, **execute `npm start` in your first terminal, and `npm test` in your second**. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
 
-My job assisting you with local setup of the app is done! You will speak to our designer next.
-
-  ---
-
-</details>
-
-**[Watch the video](http://wistia.com)**
-
-### 🎨 Product Designer
-
-Below, you will find information on how to approach the task, from your Product Designer.
-
-<details>
-  <summary>Click to read</summary>
-
-  ---
-
-Collaboration between a designer and a web developer can be very powerful. Designers excel at creating amazing user experiences and have a keen eye for beauty and usability, while developers are experts in the underlying technology of the product.
-
-However, it's important to remember that **if a design for a feature exists, it's not a suggestion**. Your job as a web developer is to implement the design with as much fidelity as possible. While a developer might think they have a better way to arrange elements on the screen, the mocks and designs are the result of research and hard work. It's important to treat them with the respect they deserve.
-
-It's crucial to use the readable texts designed for the user interface **verbatim**. If a design reads "Loading Doughnuts...", then "Loading _Your_ Doughnuts..." is incorrect. Attention to detail is critical!
-
-There are other constraints and requirements that must be followed, such as sticking to certain class names or keeping the structure of the HTML a certain way **to avoid breaking the CSS**.
-
-Fortunately, you have [a very detailed mock](https://w-s5-challenge.herokuapp.com/) that you can load in your browser and inspect in detail, which will make your job much easier. And don't worry, **you don't have to write any CSS** because it's already been taken care of!
-
-  ---
-
-</details>
-
-**[Watch the video](http://wistia.com)**
-
 ### 🥷 Lead Developer
 
-Below, your Team Lead will discuss strategy and tactics for dealing with this ticket.
-
-<details>
-  <summary>Click to read</summary>
-
-  ---
+Below, your Team Lead will discuss the tasks you need to complete.
 
 Hey! Let's make sure you're up to speed with your **action items so far**.
 
 - [x] The app is installed on your machine, with both `start` and `test` scripts running in terminals.
-- [x] You studied the [mock](https://w-s5-challenge.herokuapp.com/) in the Elements tab of Dev Tools.
-- [x] You saw how some text contents and some class names change as the user clicks around.
+- [x] You studied the [mock](todo).
 
-Awesome! Our back-end engineer says that the JSON data needed to build the Learner Cards comes from two endpoints:
+Awesome! As you complete your tasks, you should see tests passing in the terminal which is running the `test` script. **Do not stop until all tests are in the green!**
 
-- Endpoint A [GET] <http://localhost:3001/api/learners>
-- Endpoint B [GET] <http://localhost:3001/api/mentors>
+If you look inside the `frontend` folder you will notice it contains, among other assets, two scripts: `data.js` and `index.js`. If you inspect the head element of the `index.html` document, you will find both scripts loading there.
 
-❗ You should stop now, and **try out both endpoints using Postman**, to see what they return.
+Many scripts can be loaded on the same page, and whatever variables exist at the top-level of each script are accessible by any scripts executing later.
 
-Here's the tricky thing: each learner has a short list of mentors, but the response from Endpoint A only identifies the mentors by their ID numbers. This means **you will need to match the mentor IDs from Endpoint A with the real names of the mentors, found in the response from Endpoint B**.
+This is why we are loading `data.js` first: we want the data it contains available to the `index.js` script. This is how JavaScript programs were traditionally partitioned and loaded on a web-site.
 
-For fetching, you can optionally use `Promise.all` to handle the requests. We do not need the data from request A in order to _start_ request B, so the requests can happen concurrently instead of back-to-back. **This will make the app feel faster** to the user!
+With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script:
 
-Once you have the payloads from Endpoints A and B stored inside variables, check that they match what you saw in Postman, and then **use your JavaScript skills to combine the two lists into a single data structure** that is comfortable to work with. Ideally, it would look something like this:
+#### TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
-```js
-[
-  // etc
-  {
-    id: 22,
-    email:"mickey.mouse@example.com",
-    fullName: "Mickey Mouse",
-    mentors: ['James Gosling', 'Mary Shaw'] // ❗ actual names instead of IDs!
-  },
-  // etc
-]
+<details>
+  <summary>Click to read</summary>
+
+  ---
+
+Inside the section element in the HTML, there are four divs. Add a class name of "widget" to all of them. Do not modify the HTML. Work inside `index.js` exclusively!
+
+You will know your code is working correctly because some CSS will kick in for the widgets, and you will also see a passing test inside your tests. The end result in the DOM should look like the following:
+
+```html
+<section>
+  <div class="quoteoftheday widget">
+    <h3>Quote of the Day</h3>
+  </div>
+  <div class="corporatespeak widget">
+    <h3>Corporate Speak</h3>
+  </div>
+  <div class="countdown widget">
+    <h3>Countdown</h3>
+  </div>
+  <div class="friends widget">
+    <h3>Friends</h3>
+  </div>
+</section>
 ```
 
-Once you have the data in the right shape, you can **create a component function** that takes a learner in the format above, and returns a Learner Card. Then just loop over the data, generating cards as you go, and attaching them to the DOM.
+  ---
 
-Make sure that each element you create uses the **exact same class names and text contents** as those in the mock! Also, render the learners **in the same order** as they arrive from Endpoint A.
+</details>
 
-As for interactivity, all the behaviors on the page as the user clicks on the cards boil down to **changes in text contents of some elements, and changes to some class names** which can be observed in the [mock](https://w-s5-challenge.herokuapp.com/). Do not use any other mechanisms!
+#### TASK 2 - Build a "Quote of the Day" widget
 
-It might seem like you need several click handlers on different elements inside the card, but that would just make the code more complicated. Remember, events bubble up from the target to its ancestor elements! It's easier to just attach an event listener on the card element, and then **check who the target of the click is before taking the appropriate action**.
+<details>
+  <summary>Click to read</summary>
+
+  ---
+
+```html
+<div class="quoteoftheday widget" tabindex="1">
+  <h3>Quote of the Day</h3>
+  <div>Any sufficiently advanced technology is indistinguishable from magic.</div>
+  <div>Arthur C. Clarke in 1973</div>
+</div>
+```
+
+#### Task 2
+
+#### Task 3
+
+#### Task 4
+
+#### Task 5
+
+#### Task 6
 
 ❗ Install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems right inside your editor.
 
