@@ -8,37 +8,38 @@ jest.useFakeTimers()
 
 beforeEach(() => {
   document.querySelector('body').innerHTML = `
-    <header>
-      <h1>Sprint 5 Module 1 Project</h1>
-      <h2>Widgets</h2>
-      <p class="info">Building DOM programmatically...</p>
-    </header>
-    <section>
-      <div class="widget quoteoftheday">
-        <h3>Quote of the Day</h3>
-      </div>
-      <div class="widget corporatespeak">
-        <h3>Corporate Speak</h3>
-      </div>
-      <div class="widget countdown">
-        <h3>Countdown</h3>
-      </div>
-      <div class="widget friends">
-        <h3>Friends</h3>
-      </div>
-    </section>
-    <footer></footer>`
+  <header>
+    <h1>Sprint 5 Module 1 Project</h1>
+    <h2>Widgets</h2>
+    <p class="info">Building DOM programmatically...</p>
+  </header>
+  <section>
+    <div class="quoteoftheday">
+      <h3>Quote of the Day</h3>
+    </div>
+    <div class="corporatespeak">
+      <h3>Corporate Speak</h3>
+    </div>
+    <div class="countdown">
+      <h3>Countdown</h3>
+    </div>
+    <div class="friends">
+      <h3>Friends</h3>
+    </div>
+  </section>
+  <footer></footer>`
   moduleProject1()
 })
 
 describe('Sprint 5 Module', () => {
-  describe('Task 1 - widget class name', () => {
+  describe('Task 1 - Class name of widget', () => {
     test('👉 [1] All 4 widgets have a "widget" class name', () => {
       expect(document.querySelectorAll('section .widget')).toHaveLength(4)
     })
   })
   describe('Task 2 - Quote of the Day widget', () => {
-    describe('The best thing about a boolean...', () => {
+    describe(`The best thing about a boolean...
+      Anonymous in an unknown date`, () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.6)
       })
@@ -52,7 +53,8 @@ describe('Sprint 5 Module', () => {
         screen.getAllByText('Anonymous in an unknown date')
       })
     })
-    describe('The most damaging phrase...', () => {
+    describe(`The most damaging phrase...
+      Grace Hopper in 1978`, () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.4)
       })
@@ -79,7 +81,7 @@ describe('Sprint 5 Module', () => {
     })
   })
 
-  describe('Task 4 - Countdown Widget', () => {
+  describe('Task 4 - Countdown widget', () => {
     test('👉 [7] Counts from "T-minus 5..." to "Liftoff! 🚀"', () => {
       screen.getByText('Countdown')
       screen.getByText('T-minus 5...')
@@ -96,36 +98,36 @@ describe('Sprint 5 Module', () => {
     })
   })
   describe('Task 5 - Friends widget', () => {
-    describe('Kimberly Ng', () => {
+    describe('Kimberly Ng was born in 1987 and is friends with Samantha Singh.', () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.6)
       })
       afterAll(() => {
         jest.spyOn(global.Math, 'random').mockRestore()
       })
-      test('👉 [2] Kimberly Ng is correctly rendered', () => {
+      test('👉 [8] The person is correctly rendered', () => {
         screen.getAllByText('Kimberly Ng was born in 1987 and is friends with Samantha Singh.')
       })
     })
-    describe('William Brown', () => {
+    describe('William Brown was born in 1997 and is friends with Jessica Taylor, Maria Rodriguez and Kimberly Ng.', () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.8)
       })
       afterAll(() => {
         jest.spyOn(global.Math, 'random').mockRestore()
       })
-      test('👉 [2] William Brown is correctly rendered', () => {
+      test('👉 [9] The person is correctly rendered', () => {
         screen.getAllByText('William Brown was born in 1997 and is friends with Jessica Taylor, Maria Rodriguez and Kimberly Ng.')
       })
     })
-    describe('Luis Gonzalez', () => {
+    describe('Luis Gonzalez was born in 1990 and has no friends.', () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.67)
       })
       afterAll(() => {
         jest.spyOn(global.Math, 'random').mockRestore()
       })
-      test('👉 [2] Luis Gonzalez is correctly rendered', () => {
+      test('👉 [10] The person is correctly rendered', () => {
         screen.getAllByText('Luis Gonzalez was born in 1990 and has no friends.')
       })
     })
