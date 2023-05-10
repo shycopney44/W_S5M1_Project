@@ -158,16 +158,11 @@ Using the `adverbs`, `nouns` and `verbs` in `data.js`, construct DOM in the foll
   ---
 
 - This widget first displays "T-minus 5...".
-
-- After 1000 milliseconds, it should display  "T-minus 4..."
-
-- After 1000 milliseconds, it should display  "T-minus 3..."
-
-- After 1000 milliseconds, it should display  "T-minus 2..."
-
-- After 1000 milliseconds, it should display  "T-minus 1..."
-
-- After 1000 milliseconds, it should display  "Liftoff! 🚀"
+- 1000 milliseconds later, it should display  "T-minus 4..."
+- 1000 milliseconds later, it should display  "T-minus 3..."
+- 1000 milliseconds later, it should display  "T-minus 2..."
+- 1000 milliseconds later, it should display  "T-minus 1..."
+- 1000 milliseconds later, it should display  "Liftoff! 🚀"
 
 You will need `setInterval` and optionally `clearInterval` (research this!). The DOM after 3000 milliseconds should look like so:
 
@@ -182,12 +177,33 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
 
 </details>
 
-#### Task 5
+#### TASK 5 - Build a "Friends" widget
 
 <details>
   <summary>Click to read</summary>
 
   ---
+
+Select a random person from the `people` array in `data.js`, using `Math.random` for this.
+
+Each person has, among other attributes, a `friends` array containing the IDs of some buddies, which are also contained inside the `people` array.
+
+Use the random person to construct DOM in the following format:
+
+```html
+<div class="friends widget">
+  <h3>Friends</h3>
+  <p>Michael Chen was born in 1995 and is friends with Carlos Garcia, Mohammed Ali and Jason Wong.</p>
+</div>
+```
+
+Note how the string is formatted, taking careful note of punctuation and proper placement of the last "and".
+
+If the person is unlucky enough not to have friends, the paragraph renders to the DOM like so:
+
+```html
+<p>Luis Gonzalez was born in 1990 and has no friends.</p>
+```
 
   ---
 
