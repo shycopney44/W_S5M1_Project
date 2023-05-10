@@ -96,11 +96,16 @@ You will know your code is working correctly because some CSS will kick in for t
 
 #### TASK 2 - Build a "Quote of the Day" widget
 
-Let's start by using a console.log to print the variable `quotes` to the console in Chrome. Even though this variable is not declared inside `index.js`, it is defined because the `data.js` script loaded it into the global space.
+<details>
+  <summary>Click to read</summary>
 
-Now that we have determined we have access to an array of quotes, you will use Math.random (research how!) to generate a random index between 0 and 9. You will use this random index to grab one of the quotes inside the quotes array.
+  ---
 
-Using JavaScript, use the random quote we grabbed in the last step to construct the following markup on the page:
+Let's start by using a `console.log` to print the variable `quotes` to the console. Even though this variable is not declared inside `index.js`, it is defined because the `data.js` script loaded it into the global space shared by all scripts.
+
+Now that we have determined we have access to an array of quotes, you will use `Math.random` (research how!) to generate a random index between 0 and 9. You will use this random index to grab one of the quotes inside the quotes array.
+
+Using JavaScript, use the random quote we selected to construct the following markup on the page:
 
 ```html
 <!-- the text will change depending on the quote -->
