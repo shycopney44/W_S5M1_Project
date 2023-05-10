@@ -127,23 +127,56 @@ Some of the quotes have a `null` date because it is unknown. In such cases, the 
 
 </details>
 
-#### Task 3
+#### TASK 3 - Build a "Corporate Speak" widget
 
 <details>
   <summary>Click to read</summary>
 
   ---
+
+Using the `adverbs`, `nouns` and `verbs` in `data.js`, construct DOM in the following format:
+
+```html
+<div class="corporatespeak widget">
+  <h3>Corporate Speak</h3>
+  <p>
+    We need to <!-- random verb --> our <!-- random noun --> <!-- random adverb -->
+    in order to <!-- random verb --> our <!-- random noun --> <!-- random adverb -->.
+  </p>
+</div>
+```
 
   ---
 
 </details>
 
-#### Task 4
+#### TASK 4 - Build a "Countdown" widget
 
 <details>
   <summary>Click to read</summary>
 
   ---
+
+- This widget first displays "T-minus 5...".
+
+- After 1000 milliseconds, it should display  "T-minus 4..."
+
+- After 1000 milliseconds, it should display  "T-minus 3..."
+
+- After 1000 milliseconds, it should display  "T-minus 2..."
+
+- After 1000 milliseconds, it should display  "T-minus 1..."
+
+- After 1000 milliseconds, it should display  "Liftoff! 🚀"
+
+You will need `setInterval` and optionally `clearInterval` (research this!). The DOM after 3000 milliseconds should look like so:
+
+```html
+<div class="countdown widget">
+  <h3>Countdown</h3>
+  <p>T-minus 2...</p>
+</div>
+```
 
   ---
 
