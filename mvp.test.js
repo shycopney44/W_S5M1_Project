@@ -133,6 +133,7 @@ describe('Sprint 5 Module', () => {
   describe('Task 6 - Tabbing through widgets', () => {
     test('👉 [11] Can tab through widgets', () => {
       const widgets = document.querySelectorAll('.widget')
+      expect(widgets).toHaveLength(4)
       widgets.forEach((w, idx) => {
         expect(w.getAttribute('tabindex')).toBe(`${idx + 1}`)
       })
