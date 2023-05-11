@@ -22,7 +22,7 @@ In addition to these technical skills, the following soft skills will greatly im
 
 ## Instructions
 
-You have been given a take-home coding assignment as part of a hiring process for a Web Developer position. Your task is to build some widgets on a web-page, using only JavaScript.
+You have been given a take-home coding assessment as part of the hiring process for a Web Developer position. Your task is to build some widgets on a web-page, using only JavaScript.
 
 To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/) showing the desired end result.
 
@@ -51,17 +51,18 @@ As a front-end engineer, your focus is mainly on the files that load **on the us
 Hey! Let's make sure you're up to speed with your **action items so far**.
 
 - [x] The app is installed on your machine, with both `start` and `test` scripts running in terminals.
-- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/).
+- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/), and saw it loading different content at every reload.
+- [x] You loaded your app in `http://localhost:3003`.
 
-Awesome! As you complete your tasks, you should see tests passing in the terminal which is running the `test` script. **Do not stop until all tests are in the green!**
+Awesome! As you complete your tasks, tests will start passing in the terminal. **Do not stop until all tests are in the green!**
 
 If you look inside the `frontend` folder you will notice it contains, among other assets, two scripts: `data.js` and `index.js`. If you inspect the head element of the `index.html` document, you will find both scripts loading there.
 
-Many scripts can be loaded on the same page, and whatever variables exist at the top-level of each script are accessible by any scripts executing later.
+One page can load many scripts, and whatever variables exist at the top-level of each script are accessible by any scripts executing later.
 
-This is why we are loading `data.js` first: we want the data it contains available to the `index.js` script. This is how JavaScript programs were traditionally partitioned and loaded on a web-site.
+This is why we are including `data.js` first: we want the data it contains available to the `index.js` script. This is how JavaScript programs were traditionally partitioned and loaded on web-sites.
 
-With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script:
+With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.
 
 #### TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
@@ -233,8 +234,6 @@ The second one should have a `tabindex` of "2" and so on. Here is what the Count
   ---
 
 </details>
-
-❗ Install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems right inside your editor.
 
 ❗ Only make changes to the `frontend/index.js` file.
 
