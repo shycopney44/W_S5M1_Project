@@ -140,7 +140,7 @@ Some of the quotes have a `null` date because it is unknown. In such cases, the 
 
   ---
 
-Using the `adverbs`, `nouns` and `verbs` in `data.js`, construct DOM in the following format:
+Using random `adverbs`, `nouns` and `verbs` contained in `data.js`, construct DOM in the following format:
 
 ```html
 <div class="corporatespeak widget">
