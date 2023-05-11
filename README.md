@@ -71,9 +71,9 @@ With all that out of the day, let's discuss `index.js` and the tasks you need to
 
   ---
 
-Inside the section element in the HTML, there are four divs. Add a class name of "widget" to all of them. Do not modify the HTML. Work inside `index.js` exclusively!
+Inside the section element of the HTML there are four divs. Add a class name of "widget" to all of them. Do not modify the HTML. Use JavaScript!
 
-You will know your code is working correctly because some CSS will kick in for the widgets, and you will also see a passing test inside your tests. The end result in the DOM should look like the following:
+You will know your code is working correctly because some CSS will kick in for the widgets, and you will also see a passing test inside the terminal executing your tests. The end result in the DOM should look like the following:
 
 ```html
 <section>
@@ -103,14 +103,16 @@ You will know your code is working correctly because some CSS will kick in for t
 
   ---
 
-Let's start by using a `console.log` to print the variable `quotes` to the console. Even though this variable is not declared anywhere in `index.js`, it is defined because the `data.js` script loaded it into the global space shared by all scripts.
+Let's start by console logging the variable `quotes`. If you do this inside `index.js`, you should see an array of quote objects printing to the console. Even though this variable is not declared anywhere inside the file, it is _defined_ because the `data.js` script loaded it into the global space shared by all scripts.
 
-Now that we have determined we have access to an array of quotes, you will use `Math.random` (research how!) to generate a random index between 0 and 9. You will use this random index to grab one of the quotes in the quotes array.
+(You can also evaluate top-level variables by just entering them into the console and hitting Enter.)
 
-Use the random quote you selected to construct the following markup in the DOM:
+Now that we have determined we have access to an array of quotes, you will use `Math.random` to generate a random index **between 0 and 9** (you can Google, or ask ChatGPT how). You will use this random index to grab one of the quotes in the quotes array.
+
+Use the random quote you selected to construct the following piece of DOM:
 
 ```html
-<!-- the actual text will change depending on the quote -->
+<!-- the actual text will change at every reload, depending on the quote -->
 <div class="quoteoftheday widget">
   <h3>Quote of the Day</h3>
   <div>Optimism is an occupational hazard of programming: feedback is the treatment.</div>
@@ -159,7 +161,7 @@ Using the `adverbs`, `nouns` and `verbs` in `data.js`, construct DOM in the foll
 
   ---
 
-- This widget first displays "T-minus 5...".
+- This widget on page load displays "T-minus 5...".
 - 1000 milliseconds later, it should display  "T-minus 4..."
 - 1000 milliseconds later, it should display  "T-minus 3..."
 - 1000 milliseconds later, it should display  "T-minus 2..."
@@ -271,7 +273,7 @@ The CSS is the domain of a different team, and in this particular project we're 
 <details>
   <summary>Why am I not allowed to edit the HTML file?</summary>
 
-This particular part of the product is a Single Page Application, so the HTML is mostly empty and the page is generated automatically using JavaScript. We would not want to manually edit HTML files in a website that changed all the time! It would be untenable.
+This particular part of the product is a Single Page Application, so the HTML is mostly empty and the page is generated automatically using JavaScript and raw data. We would not want to manually edit HTML files in a website that changed all the time! It would be untenable.
 
 </details>
 
@@ -320,7 +322,7 @@ Although a small, "old-fashioned" website might be made of just HTML, CSS and JS
 <details>
   <summary>Is this how web projects are normally organized?</summary>
 
-Web projects can be organized in a million ways, there aren't many standards. Some developers like it like this, while others prefer to use opinionated frameworks, which do a lot of magic but prescribe that folders and files be structured and named just so.
+Web projects can be organized in a million ways, there aren't many standards. Some developers like the freedom, while others prefer to use opinionated frameworks, which can do a lot of magic but prescribe that folders and files be structured and named just so.
 
 </details>
 
