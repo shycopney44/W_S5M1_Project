@@ -62,9 +62,11 @@ One page can load many scripts, and whatever variables exist at the top-level of
 
 This is why we are including `data.js` first: we want the data it contains available to the `index.js` script. This is how JavaScript programs were traditionally partitioned and loaded on web-sites.
 
-With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.
+**With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.**
 
-#### TASK 1 - Add a "widget" class name to widgets so CSS kicks in
+Have fun, and reach out to Staff if you get too stuck!
+
+#### 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
 <details>
   <summary>Click to read</summary>
@@ -96,7 +98,7 @@ You will know your code is working correctly because some CSS will kick in for t
 
 </details>
 
-#### TASK 2 - Build a "Quote of the Day" widget
+#### 👉 TASK 2 - Build a "Quote of the Day" widget
 
 <details>
   <summary>Click to read</summary>
@@ -131,7 +133,7 @@ Some of the quotes have a `null` date because it is unknown. In such cases, the 
 
 </details>
 
-#### TASK 3 - Build a "Corporate Speak" widget
+#### 👉 TASK 3 - Build a "Corporate Speak" widget
 
 <details>
   <summary>Click to read</summary>
@@ -154,7 +156,7 @@ Using the `adverbs`, `nouns` and `verbs` in `data.js`, construct DOM in the foll
 
 </details>
 
-#### TASK 4 - Build a "Countdown" widget
+#### 👉 TASK 4 - Build a "Countdown" widget
 
 <details>
   <summary>Click to read</summary>
@@ -181,7 +183,7 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
 
 </details>
 
-#### TASK 5 - Build a "Friends" widget
+#### 👉 TASK 5 - Build a "Friends" widget
 
 <details>
   <summary>Click to read</summary>
@@ -203,6 +205,10 @@ Use the random person to construct DOM in the following format:
 
 Note how the string is formatted, taking careful note of punctuation and proper placement of the "and" before the last friend.
 
+The friends mentioned in the p tag come from the `friends` property of the randomly selected person.
+
+In the example above, Carlos Garcia, Mohammed Ali and Jason Wong are the people who correspond to the IDs inside Michael Chen's `friends` array.
+
 If the person is unlucky enough not to have any friends inside their `friends` property, the paragraph renders to the DOM like so:
 
 ```html
@@ -213,7 +219,7 @@ If the person is unlucky enough not to have any friends inside their `friends` p
 
 </details>
 
-#### Task 6
+#### 👉 Task 6
 
 <details>
   <summary>Click to read</summary>
@@ -237,15 +243,9 @@ The second one should have a `tabindex` of "2" and so on. Here is what the Count
 
 </details>
 
-❗ Only make changes to the `frontend/index.js` file.
-
-Reach out if you get too stuck, and have fun!
-
   ---
 
 </details>
-
-**[Watch the video](http://wistia.com)**
 
 ## FAQ
 
