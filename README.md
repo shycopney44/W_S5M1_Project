@@ -192,7 +192,7 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
 
 Select a random person from the `people` array in `data.js`, using `Math.random` for this.
 
-Each person has, among other attributes, a `friends` array containing the IDs of some buddies, which are also contained inside the `people` array.
+Each person has, among other attributes, a `friends` array containing the IDs of some buddies, who also happen to be persons inside the `people` array.
 
 Use the random person to construct DOM in the following format:
 
