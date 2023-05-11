@@ -152,6 +152,8 @@ Using the `adverbs`, `nouns` and `verbs` in `data.js`, construct DOM in the foll
 </div>
 ```
 
+The mumbo-jumbo should change at each page reload!
+
   ---
 
 </details>
