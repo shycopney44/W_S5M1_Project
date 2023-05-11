@@ -24,7 +24,7 @@ In addition to these technical skills, the following soft skills will greatly im
 
 You have been given a take-home coding assignment as part of a hiring process for a Web Developer position. Your task is to build some widgets on a web-page, using only JavaScript.
 
-To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](todo) showing the desired end result.
+To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/) showing the desired end result.
 
 Make sure to carefully read and follow their instructions. Good luck!
 
@@ -32,15 +32,17 @@ Make sure to carefully read and follow their instructions. Good luck!
 
 **Below, a DevOps Engineer will help you set up your local environment and launch the project:**
 
-This is a **full-stack web application** that comprises both back-end and front-end components. When deployed to production, the back-end part would run in the cloud (think Amazon Web Services or Azure), while the front-end would execute inside the user's web browser (like Chrome for Android, or Firefox for desktop).
+This is a **full-stack web application** that comprises both back-end and front-end components. If deployed to production, the back-end part would run in the cloud (think Amazon Web Services or Azure), while the front-end would execute inside the user's web browser (like Chrome for Android, or Firefox for desktop).
 
-As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular project, these files live inside the `frontent` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node app, with a `package.json` file at the root containing meta-information about the project.
+As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular case, these files live inside the `frontent` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it contains a `package.json` file at the root, containing some meta-information like name and version, and a few useful scripts developers can use as they work on the app, like "npm test".
 
 1. You will **clone this repository** to your computer, which will allow you to run the software locally for development and testing purposes.
 
-1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries listed inside `package.json`. Some of these packages are needed for the back-end to do its job of serving the website you will be working on. Other libs help with things like testing and linting your code.
+1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries declared inside `package.json`. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other libs help with things like testing and linting your code.
 
-1. After successful installation you will run, in separate terminals, the two scripts referenced inside `package.json`. To do this, **execute `npm start` in your first terminal, and `npm test` in your second**. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
+1. After successful installation you will run, in separate terminals, two of the scripts found inside `package.json`. To do this, **execute `npm start` in your first terminal, and `npm test` in your second**. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
+
+1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems right inside your editor, which saves tons of time.
 
 ### 🥷 Lead Developer
 
@@ -49,7 +51,7 @@ As a front-end engineer, your focus is mainly on the files that load **on the us
 Hey! Let's make sure you're up to speed with your **action items so far**.
 
 - [x] The app is installed on your machine, with both `start` and `test` scripts running in terminals.
-- [x] You studied the [mock](todo).
+- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/).
 
 Awesome! As you complete your tasks, you should see tests passing in the terminal which is running the `test` script. **Do not stop until all tests are in the green!**
 
@@ -247,16 +249,9 @@ Reach out if you get too stuck, and have fun!
 ## FAQ
 
 <details>
-  <summary>How do I submit this task?</summary>
-
-You submit via Codegrade. Check the assignment page on your learning platform.
-
-</details>
-
-<details>
   <summary>I am getting errors when I run npm install or npm start. What is going on?</summary>
 
-This project requires Node correctly installed on your computer, in order to work. Your Orientation materials should have covered installation of Node. Sometimes Node can be installed but be mis-configured. If the errors persist, please request assistance from Staff.
+This project requires Node correctly installed on your computer in order to work. Your learning materials should have covered installation of Node. Sometimes Node can be installed but mis-configured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, in which case you should request assistance from Staff.
 
 </details>
 
@@ -268,51 +263,44 @@ No. Everything you need should be installed already, including Axios.
 </details>
 
 <details>
-  <summary>Why can't I edit the CSS file?</summary>
+  <summary>Why am I not allowed to edit the CSS file?</summary>
 
-The CSS is the domain of a different team, and in this particular project we're not supposed to touch it. Do not use inline styles to get around this! It will only make the CSS team angry. And believe me, you want them happy, as they can write CSS twenty times faster than you.
-
-</details>
-
-<details>
-  <summary>Why can't I edit the HTML file?</summary>
-
-This particular part of the product is a Single Page Application, so the HTML is mostly generated by JavaScript. We don't want to manually edit HTML files when the data that powers the site changes often! It would be untenable.
+The CSS is the domain of a different team, and in this particular project we're not supposed to touch it. Do not use inline styles to get around this limitation! It will only make the CSS team angry. And believe us, you want CSS specialists happy because they can write CSS twenty times faster than you.
 
 </details>
 
 <details>
-  <summary>How do I debug this project?</summary>
+  <summary>Why am I not allowed to edit the HTML file?</summary>
 
-Save your changes, and reload the site in Chrome. If you have a syntax error in your code, the app will crash and you will see errors in the Console. Put console logs before the crash site (error messages usually inform of the line where the crash is happening) and see if your variables contain the data you think they do.
+This particular part of the product is a Single Page Application, so the HTML is mostly empty and the page is generated automatically using JavaScript. We would not want to manually edit HTML files in a website that changed all the time! It would be untenable.
+
+</details>
+
+<details>
+  <summary>My page does not work! How do I debug it?</summary>
+
+Save your changes, and reload the site in Chrome. If you have a syntax problem in your code, the app will print error messages in the Console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem is originating) and see if your variables contain the data you think they do. If there are no errors but the page is not doing what it's supposed to, the debugging technique is similar: put console logs to ensure that the code you are working on is actually executing, and to check that all variables in the area hold the correct data.
 
 </details>
 
 <details>
   <summary>How do I run tests against my code?</summary>
 
-Execute `npm test` in your terminal. These are the same tests that execute inside Codegrade. Although this never crossed your mind, tampering with the test file won't change your score, because Codegrade uses a pristine copy of the original test file, `mvp.test.js`.
+Execute `npm test` in your terminal. If a particular test is giving you grief, don't jump straight to the code to try and fix it. Go to Chrome first, and make sure you can replicate the problem there. A problem we can reliably replicate is a problem mostly fixed.
 
 </details>
 
 <details>
   <summary>I believe my code is correct and the test is wrong. What do I do?</summary>
 
-Sometimes a test refuses to budge, even if (we think) our code is doing the right thing. Use CTRL-C to kill the tests, and then `npm test` to launch them again, just in case there is a problem with the test runner. More likely, there is a problem with your code. Try your best to reproduce the error by interacting with the site in Chrome. Do not code "to make the test happy". Code so that the browser does exactly what the mock does. The tests are there for confirmation. If the problem persists, please request assistance from Staff.
+On occasion the test runner will get stuck. Use CTRL-C to kill the tests, and then `npm test` to launch them again. Try to reproduce the problem the test is complaining about by interacting with the site in Chrome, and do not code "to make the test happy". Code so that **your app does exactly what the mock does**. The tests are there for confirmation. Although it's possible that a particular test be flawed, statistically it's more likely that the bug is in your own code. If the problem persists, please request assistance from Staff.
 
 </details>
 
 <details>
-  <summary>The output of the test script is too overwhelming! What do I do?</summary>
+  <summary>The output of the test script is just too overwhelming! What can I do?</summary>
 
-If a test complains about something, you should try your best to replicate the problem in Chrome. If you need to disable all tests except the one you are focusing on, edit the `mvp.test.js` file and, as an example, change `test('👉 it works', () => { etc })` into `test.only('👉 it works', () => { etc })`. (Note the "only".) This won't affect Codegrade, because Codegrade runs its own version of the tests.
-
-</details>
-
-<details>
-  <summary>Why can't a single endpoint provide the data in the correct shape?</summary>
-
-As web developers, we often don't have control over our sources of data, and it's common to have to combine JSON from various sources into a data structure that works for the front-end. Even if the endpoints were under our control, and the back-end team were willing to build a new endpoint or improve the existing ones, bug fixes and features sometimes can't wait that long.
+If you need to disable all tests except the one you are focusing on, edit the `mvp.test.js` file and, as an example, change `test('👉 focus on this', () => { etc })` to be `test.only('👉 focus on this', () => { etc })`. (Note the "only".)
 
 </details>
 
@@ -333,21 +321,21 @@ Although a small, "old-fashioned" website might be made of just HTML, CSS and JS
 <details>
   <summary>Is this how web projects are normally organized?</summary>
 
-Web projects can be organized in a million ways, there are no standards beyond the placement of configuration files, which typically live at the root. Some developers like it like this, while others prefer to use opinionated frameworks, which do a lot of magic but prescribe that folders and files be structured and named just so.
+Web projects can be organized in a million ways, there aren't many standards. Some developers like it like this, while others prefer to use opinionated frameworks, which do a lot of magic but prescribe that folders and files be structured and named just so.
 
 </details>
 
 <details>
-  <summary>Why is my code inside index.js wrapped in an async function called sprintChallenge5?</summary>
+  <summary>Why is my code inside index.js wrapped in an async function called "sprintChallenge5"?</summary>
 
-This way we can easily import your code as a single function in the `mvp.test.js` test suite. The export syntax is at the bottom of `index.js`, but this syntax does not work in the browser, only in the environment where the tests execute, which is Node. The function declaration is prefixed by the `async` keyword to allow you to use `await` inside it.
+This way we can easily import your code as a single function in the `mvp.test.js` test suite. The export syntax is at the bottom of `index.js`. The function declaration is prefixed by the `async` keyword to allow you to use `await` inside it.
 
 </details>
 
 <details>
   <summary>What are the package.json and package-lock.json files?</summary>
 
-The `package.json` file contains meta-information about the project like its version number, scripts that the developer can execute, and a list of the dependencies that are downloaded when you execute `npm install`. There can be some wiggle room to allow newer versions of the dependencies to be installed, so the `package-lock.json` file makes sure the exact same versions of everything are used every time the project is installed from scratch.
+The `package.json` file contains meta-information about the project like its version number, scripts that the developer can execute, and a list of the dependencies that are downloaded when you execute `npm install`. There can be some wiggle room to allow newer versions of the dependencies to be installed, so the `package-lock.json` file, when present, makes sure the exact same versions of everything are used every time the project is installed from scratch.
 
 </details>
 
