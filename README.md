@@ -24,7 +24,7 @@ In addition to these technical skills, the following soft skills will greatly im
 
 You have been given a take-home coding assessment as part of the hiring process for a Web Developer position. Your task is to build some widgets on a web-page, using only JavaScript.
 
-To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/) showing the desired end result.
+To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/) showing the desired end result.
 
 Make sure to carefully read and follow their instructions. Good luck!
 
@@ -51,7 +51,7 @@ As a front-end engineer, your focus is mainly on the files that load **on the us
 Hey! Let's make sure you're up to speed with your **action items so far**.
 
 - [x] The app is installed on your machine, with both `start` and `test` scripts running in terminals.
-- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5_module_project/), and saw it loading different content at every reload.
+- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/), and saw it loading different content at every reload.
 - [x] You loaded your app in `http://localhost:3003`.
 
 Awesome! As you complete your tasks, tests will start passing in the terminal. **Do not stop until all tests are in the green!**
@@ -261,7 +261,7 @@ This project requires Node correctly installed on your computer in order to work
 <details>
   <summary>Do I need to install libraries or add scripts to the HTML?</summary>
 
-No. Everything you need should be installed already, including Axios.
+No. Everything you need should be installed already.
 
 </details>
 
@@ -329,9 +329,9 @@ Web projects can be organized in a million ways, there aren't many standards. So
 </details>
 
 <details>
-  <summary>Why is my code inside index.js wrapped in an async function called "sprintChallenge5"?</summary>
+  <summary>Why is my code inside index.js wrapped in a function?</summary>
 
-This way we can easily import your code as a single function in the `mvp.test.js` test suite. The export syntax is at the bottom of `index.js`. The function declaration is prefixed by the `async` keyword to allow you to use `await` inside it.
+This way we can easily import your code as a single function in the `mvp.test.js` test suite. The export syntax is at the bottom of `index.js`.
 
 </details>
 
