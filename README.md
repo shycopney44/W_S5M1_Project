@@ -221,7 +221,7 @@ If the person is unlucky enough not to have any friends inside their `friends` p
 
 </details>
 
-#### 👉 Task 6
+#### 👉 Task 6 Add tab indices to widgets
 
 <details>
   <summary>Click to read</summary>
