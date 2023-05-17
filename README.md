@@ -64,7 +64,7 @@ This is why we are including `data.js` first: we want the data it contains avail
 
 **With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.**
 
-Have fun, and reach out to Staff if you get too stuck!
+Have fun, and check out the Solution Video for this project if you get too stuck!
 
 #### 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
