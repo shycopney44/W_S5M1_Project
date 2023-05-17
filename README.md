@@ -245,10 +245,6 @@ The second one should have a `tabindex` of "2" and so on. Here is what the Count
 
 </details>
 
-  ---
-
-</details>
-
 ## FAQ
 
 <details>
