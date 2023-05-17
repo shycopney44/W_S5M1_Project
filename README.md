@@ -248,6 +248,13 @@ The second one should have a `tabindex` of "2" and so on. Here is what the Count
 ## FAQ
 
 <details>
+  <summary>I feel very stuck. What can I do?</summary>
+
+Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk yoy through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
+
+</details>
+
+<details>
   <summary>I am getting errors when I run npm install or npm start. What is going on?</summary>
 
 This project requires Node correctly installed on your computer in order to work. Your learning materials should have covered installation of Node. Sometimes Node can be installed but mis-configured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, in which case you should request assistance from Staff.
