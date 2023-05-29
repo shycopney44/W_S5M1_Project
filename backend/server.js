@@ -27,8 +27,10 @@ server.use((err, req, res, next) => { // eslint-disable-line
 
 server.listen(port, () => {
   console.log(`
--------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 To see YOUR PROJECT in the browser, navigate to --> http://localhost:3003
--------------------------------------------------------------------------
+
+See THE MOCK --> https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/
+---------------------------------------------------------------------------------------
 `)
 })
