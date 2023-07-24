@@ -34,7 +34,7 @@ Make sure to read and follow their instructions carefully. Good luck!
 
 This project is a **full-stack web application** comprising both back-end and front-end components. If deployed to production, the back-end part would run in the cloud (e.g., Amazon Web Services, Azure), while the front-end would execute inside the user's web browser (e.g., Chrome, Firefox, etc.).
 
-As the front-end engineer, you will focus mainly on the files that load **on the user's device**. In this particular case, these files live inside the front-end folder. The back-end folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it has a package.json file at the root, containing some meta-information like name and version and a few useful scripts developers can use as they work on the app, like "npm test".
+As the front-end engineer, you will focus mainly on the files that load **on the user's device**. In this particular case, these files live inside the `frontend` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it has a package.json file at the root, containing some meta-information like name and version and a few useful scripts developers can use as they work on the app, like "npm test".
 
 Here are the steps to start this project:
 
