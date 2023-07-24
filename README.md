@@ -259,7 +259,7 @@ Check out the Solution Video for this project in your learning platform. In it, 
 <details>
   <summary>I am getting errors when I run npm install or npm start. What is going on?</summary>
 
-This project requires Node to be correctly installed on your computer to work. Your learning materials should have covered the installation of Node. Sometimes Node can be installed but misconfigured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, and you should request assistance from a learning assistant.
+This project requires Node to be correctly installed on your computer to work. Your learning materials should have covered the installation of Node. Sometimes Node can be installed but misconfigured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, and you should request assistance from a learner assistant.
 
 </details>
 
