@@ -2,19 +2,19 @@
 
 ## Introduction
 
-Welcome to Module 1 Project! In this project, you will practice using "vanilla" JavaScript to manipulate the DOM, without any frameworks. Your goal is to build some widgets on a web-page, using only JavaScript.
+Welcome to the Sprint 5 Module 1 Project! In this project, you will practice using "vanilla" JavaScript to manipulate the DOM, without any frameworks. Your goal is to build some widgets on a webpage using only JavaScript.
 
-To successfully complete this project, you will need the following technical skills:
+To complete this project, you will need to do the following:
 
-1. **Selecting elements** and groups of elements from the DOM.
-1. **Creating new elements** and attaching them to the DOM.
-1. **Looping** over arrays and lists of DOM elements.
-1. **Generating pseudo-random numbers** using the Math object.
-1. **Using data** and template literals to build text content for elements in the DOM.
-1. **Manipulating attributes** on elements.
-1. **Using setInterval** to schedule repeated actions.
+1. **Select elements** and groups of elements from the DOM.
+1. **Create new elements** and attach them to the DOM.
+1. **Loop** over arrays and lists of DOM elements.
+1. **Generate pseudo-random numbers** using the Math object.
+1. **Use data** and template literals to build text content for elements in the DOM.
+1. **Manipulate attributes** on elements.
+1. **Use setInterval** to schedule repeated actions.
 
-In addition to these technical skills, the following soft skills will greatly impact your performance:
+In addition to these technical skills, the following soft skills will significantly impact your performance:
 
 1. Attention to detail. Make sure there isn't a single character out of place!
 1. Perseverance. Keep trying until you figure it out!
@@ -22,49 +22,49 @@ In addition to these technical skills, the following soft skills will greatly im
 
 ## Instructions
 
-You have been given a take-home coding assessment as part of the hiring process for a Web Developer position. Your task is to build some widgets on a web-page, using only JavaScript.
+You have received a take-home coding assessment for a front-end Web Developer position as part of the hiring process. Your task is to build widgets on a webpage using only JavaScript.
 
-To help you complete the task, two of your future team-members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/) showing the desired end result.
+To help you complete the task, two of your future team members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/) showing the desired result.
 
-Make sure to carefully read and follow their instructions. Good luck!
+Make sure to read and follow their instructions carefully. Good luck!
 
 ### 💾 DevOps Engineer
 
 **Below, a DevOps Engineer will help you set up your local environment and launch the project:**
 
-This is a **full-stack web application** that comprises both back-end and front-end components. If deployed to production, the back-end part would run in the cloud (think Amazon Web Services or Azure), while the front-end would execute inside the user's web browser (like Chrome for Android, or Firefox for desktop).
+This project is a **full-stack web application** comprising both back-end and front-end components. If deployed to production, the back-end part would run in the cloud (e.g., Amazon Web Services, Azure), while the front-end would execute inside the user's web browser (e.g., Chrome, Firefox, etc.).
 
-As a front-end engineer, your focus is mainly on the files that load **on the user's device**. In this particular case, these files live inside the `frontent` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it contains a `package.json` file at the root, containing some meta-information like name and version, and a few useful scripts developers can use as they work on the app, like "npm test".
+As the front-end engineer, you will focus mainly on the files that load **on the user's device**. In this particular case, these files live inside the front-end folder. The back-end folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it has a package.json file at the root, containing some meta-information like name and version and a few useful scripts developers can use as they work on the app, like "npm test".
 
-1. You will **clone this repository** to your computer, which will allow you to run the software locally for development and testing purposes.
+Here are the steps to start this project:
 
-1. You will navigate your terminal to the project folder **and execute `npm install`**. This will install the libraries declared inside `package.json`. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other libs help with things like testing and linting your code.
+1. **Clone this repository** to your computer, allowing you to run the software locally for development and testing purposes.
 
-1. After successful installation you will run, in separate terminals, two of the scripts found inside `package.json`. To do this, **execute `npm start` in your first terminal, and `npm test` in your second**. On successful start, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is called a port, allowing multiple web servers to run on the same computer, with one server per port.
+1. Within your terminal, navigate to the project folder **and execute `npm install`**. This command installs the libraries declared inside package.json. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other packages help with things like testing and linting your code.
 
-1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems right inside your editor, which saves tons of time.
+1. After successful installation, open two terminal windows and **execute `npm start` in your first terminal and `npm test` in your second**. With those two commands running, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is the port. Your machine has many ports allowing many web servers to run on the same computer, with one server per port.
+
+1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems in your editor, saving tons of time.
 
 ### 🥷 Lead Developer
 
 **Below, your Team Lead will discuss the tasks you need to complete.**
 
-Hey! Let's make sure you're up to speed with your **action items so far**.
+Hey! Let's ensure you're up to speed with your **action items so far**.
 
-- [x] The app is installed on your machine, with both `start` and `test` scripts running in terminals.
+- [x] The app is installed on your machine, with `start` and `test` scripts running in terminals.
 - [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/), and saw it loading different content at every reload.
 - [x] You loaded your app in `http://localhost:3003`.
 
-Awesome! As you complete your tasks, tests will start passing in the terminal. **Do not stop until all tests are in the green!**
+Awesome! As you complete your tasks, tests will start passing in the terminal. **Keep going until all tests are in the green!**
 
 If you look inside the `frontend` folder you will notice it contains, among other assets, two scripts: `data.js` and `index.js`. If you inspect the head element of the `index.html` document, you will find both scripts loading there.
 
-One page can load many scripts, and whatever variables exist at the top-level of each script are accessible by any scripts executing later.
+One page can load many scripts, and whatever variables exist at the top level of each script are accessible by any scripts executing later. In this case, we include `data.js` first because we want the data it contains to be available to the `index.js` script. 
 
-This is why we are including `data.js` first: we want the data it contains available to the `index.js` script. This is how JavaScript programs were traditionally partitioned and loaded on web-sites.
+**With all that out of the way, open `index.js` and work on the following tasks you need to complete inside that script. You are not allowed to modify any other files.**
 
-**With all that out of the day, let's discuss `index.js` and the tasks you need to complete inside that script. You are not allowed to modify any other files.**
-
-Have fun, and check out the Solution Video for this project if you get too stuck!
+Have fun, and check out the Solution Video for this project if you need help!
 
 #### 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
@@ -73,7 +73,7 @@ Have fun, and check out the Solution Video for this project if you get too stuck
 
   ---
 
-Inside the section element of the HTML there are four divs. Add a class name of "widget" to all of them. Do not modify the HTML. Use JavaScript!
+Inside the section element of the `index.html` file, you will find four divs. Add a class name of "widget" to all of them. Remember, you're only allowed to change the `index.js` file.
 
 You will know your code is working correctly because some CSS will kick in for the widgets, and you will also see a passing test inside the terminal executing your tests. The end result in the DOM should look like the following:
 
@@ -105,13 +105,13 @@ You will know your code is working correctly because some CSS will kick in for t
 
   ---
 
-Let's start by console logging the variable `quotes`. If you do this inside `index.js`, you should see an array of quote objects printing to the console. Even though this variable is not declared anywhere inside the file, it is _defined_ because the `data.js` script loaded it into the global space shared by all scripts.
+Start by console logging the variable `quotes` inside of `index.js`. You should see an array of quote objects printing to the console. Even though this variable is not declared anywhere inside the file, it is _defined_ because the `data.js` script loaded it into the global space shared by all scripts.
 
-(You can also evaluate top-level variables by just entering them into the console and hitting Enter.)
+(You can also evaluate top-level variables by entering them into the console and hitting Enter.)
 
-Now that we have determined we have access to an array of quotes, you will use `Math.random` to generate a random index **between 0 and 9** (you can Google, or ask ChatGPT how). You will use this random index to grab one of the quotes in the quotes array.
+Now that we have determined we can access the array of quotes, you will use `Math.random` to generate a random index **between 0 and 9** (you can Google or ask ChatGPT how). You will use this random index to grab one of the quotes in the quotes array.
 
-Use the random quote you selected to construct the following piece of DOM:
+Use the random quote you selected to add to the quoteoftheday div the following piece of DOM:
 
 ```html
 <!-- the actual text will change at every reload, depending on the quote -->
@@ -122,7 +122,7 @@ Use the random quote you selected to construct the following piece of DOM:
 </div>
 ```
 
-Some of the quotes have a `null` date because it is unknown. In such cases, the div containing the author should be in the following format:
+Some quotes have a `null` date because it is unknown. In such cases, the div containing the author should be in the following format:
 
 ```html
 <!-- the name will change depending on the quote -->
@@ -140,7 +140,7 @@ Some of the quotes have a `null` date because it is unknown. In such cases, the 
 
   ---
 
-Using random `adverbs`, `nouns` and `verbs` contained in `data.js`, construct DOM in the following format:
+Using random values from the arrays `adverbs`, `nouns`, and `verbs` contained in `data.js`, add to the DOM inside the corportatespeak div in the following format:
 
 ```html
 <div class="corporatespeak widget">
@@ -152,7 +152,7 @@ Using random `adverbs`, `nouns` and `verbs` contained in `data.js`, construct DO
 </div>
 ```
 
-The mumbo-jumbo should change at each page reload!
+The text should change at each page load/refresh.
 
   ---
 
@@ -164,15 +164,16 @@ The mumbo-jumbo should change at each page reload!
   <summary>Click to read</summary>
 
   ---
+This widget will contain text that will countdown to liftoff. Each second, the widget's text will change to show the following:
 
-- This widget on page load displays "T-minus 5...".
+- The widget will display "T-minus 5..." on page load.
 - 1000 milliseconds later, it should display  "T-minus 4..."
 - 1000 milliseconds later, it should display  "T-minus 3..."
 - 1000 milliseconds later, it should display  "T-minus 2..."
 - 1000 milliseconds later, it should display  "T-minus 1..."
 - 1000 milliseconds later, it should display  "Liftoff! 🚀"
 
-You will need `setInterval` and optionally `clearInterval` (research this!). The DOM after 3000 milliseconds should look like so:
+You will need `setInterval` and optionally `clearInterval` (research this!). The countdown div in the DOM after 3000 milliseconds should look like so:
 
 ```html
 <div class="countdown widget">
@@ -191,12 +192,13 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
   <summary>Click to read</summary>
 
   ---
+This widget will show a random person from the `people` array along with some data related to the person. 
 
-Select a random person from the `people` array in `data.js`, using `Math.random` for this.
+Start by selecting a random person from the `people` array in `data.js` using `Math.random`.
 
 Each person has, among other attributes, a `friends` array containing the IDs of some buddies, who also happen to be persons inside the `people` array.
 
-Use the random person to construct DOM in the following format:
+Use the random person to construct the inside of the friends div in the following format:
 
 ```html
 <div class="friends widget">
@@ -209,7 +211,7 @@ Note how the string is formatted, taking careful note of punctuation and proper 
 
 The friends mentioned in the p tag come from the `friends` property of the randomly selected person.
 
-In the example above, Carlos Garcia, Mohammed Ali and Jason Wong are the people who correspond to the IDs inside Michael Chen's `friends` array.
+In the example above, Carlos Garcia, Mohammed Ali, and Jason Wong are the people who correspond to the IDs inside Michael Chen's `friends` array.
 
 If the person is unlucky enough not to have any friends inside their `friends` property, the paragraph renders to the DOM like so:
 
@@ -230,7 +232,7 @@ If the person is unlucky enough not to have any friends inside their `friends` p
 
 We need to be able to tab between widgets using the Tab key, which helps make the site more accessible.
 
-In order to do this, select the first widget from the DOM and add give it a `tabindex` attribute of "1".
+To do this, select the first widget from the DOM and add a `tabindex` attribute of "1".
 
 The second one should have a `tabindex` of "2" and so on. Here is what the Countdown widget would look like as an example:
 
@@ -250,14 +252,14 @@ The second one should have a `tabindex` of "2" and so on. Here is what the Count
 <details>
   <summary>I feel very stuck. What can I do?</summary>
 
-Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk you through their thinking in detail while they solve the tasks. The Solution Videos are highly recommended even if you are not stuck: you will learn lots of tricks.
+Check out the Solution Video for this project in your learning platform. In it, an industry expert will walk you through their thinking in detail while they solve the tasks. We highly recommend the Solution even if you are not stuck. You will learn lots of tricks.
 
 </details>
 
 <details>
   <summary>I am getting errors when I run npm install or npm start. What is going on?</summary>
 
-This project requires Node correctly installed on your computer in order to work. Your learning materials should have covered installation of Node. Sometimes Node can be installed but mis-configured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, in which case you should request assistance from Staff.
+This project requires Node to be correctly installed on your computer to work. Your learning materials should have covered the installation of Node. Sometimes Node can be installed but misconfigured. You can try executing `npm run fixit` (check `package.json` to see what this does), but if Node errors are recurrent, it indicates something is wrong with your machine or configuration, and you should request assistance from a learning assistant.
 
 </details>
 
@@ -271,21 +273,23 @@ No. Everything you need should be installed already.
 <details>
   <summary>Why am I not allowed to edit the CSS file?</summary>
 
-The CSS is the domain of a different team, and in this particular project we're not supposed to touch it. Do not use inline styles to get around this limitation! It will only make the CSS team angry. And believe us, you want CSS specialists happy because they can write CSS twenty times faster than you.
+The CSS is the domain of a different team, and in this particular project we're not supposed to touch it. Do not use inline styles to get around this limitation.
 
 </details>
 
 <details>
   <summary>Why am I not allowed to edit the HTML file?</summary>
 
-This particular part of the product is a Single Page Application, so the HTML is mostly empty and the page is generated automatically using JavaScript and raw data. We would not want to manually edit HTML files in a website that changed all the time! It would be untenable.
+This part of the product is a Single Page Application, so the HTML is mostly empty, and the page is automatically generated using JavaScript and raw data. We would not want to manually edit HTML files in a website that changed all the time! It would be untenable.
 
 </details>
 
 <details>
   <summary>My page does not work! How do I debug it?</summary>
 
-Save your changes, and reload the site in Chrome. If you have a syntax problem in your code, the app will print error messages in the Console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem is originating) and see if your variables contain the data you think they do. If there are no errors but the page is not doing what it's supposed to, the debugging technique is similar: put console logs to ensure that the code you are working on is actually executing, and to check that all variables in the area hold the correct data.
+Save your changes, and reload the site in Chrome. If your code has a syntax problem, the app will print error messages in the console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem originates) and see if your variables contain the data you think they do. 
+
+Suppose there are no errors, but the page is not doing what it should. In that case, the debugging technique is similar: put console logs to ensure that the code you are working on is executing and check that all variables in the area hold the correct data.
 
 </details>
 
