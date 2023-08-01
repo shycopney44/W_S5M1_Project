@@ -24,47 +24,37 @@ In addition to these technical skills, the following soft skills will significan
 
 You have received a take-home coding assessment for a front-end Web Developer position as part of the hiring process. Your task is to build widgets on a webpage using only JavaScript.
 
-To help you complete the task, two of your future team members will provide you with instructions and advice. You can find a [detailed mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/) showing the desired result.
+You can find a detailed mock [HERE](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/) showing the desired final result.
 
-Make sure to read and follow their instructions carefully. Good luck!
+### 💾 Setup
 
-### 💾 DevOps Engineer
-
-**Below, a DevOps Engineer will help you set up your local environment and launch the project:**
-
-This project is a **full-stack web application** comprising both back-end and front-end components. If deployed to production, the back-end part would run in the cloud (e.g., Amazon Web Services, Azure), while the front-end would execute inside the user's web browser (e.g., Chrome, Firefox, etc.).
-
-As the front-end engineer, you will focus mainly on the files that load **on the user's device**. In this particular case, these files live inside the `frontend` folder. The `backend` folder contains a web server built in Node, but the project as a whole is managed as a Node application. As such, it has a package.json file at the root, containing some meta-information like name and version and a few useful scripts developers can use as they work on the app, like "npm test".
-
-Here are the steps to start this project:
+**Here are the steps to set up this project:**
 
 1. **Clone this repository** to your computer, allowing you to run the software locally for development and testing purposes.
 
-1. Within your terminal, navigate to the project folder **and execute `npm install`**. This command installs the libraries declared inside package.json. Some of these packages are needed for the back-end to do its job of serving front-end assets. Other packages help with things like testing and linting your code.
+1. Within your terminal, navigate to the project folder **and execute `npm install`**.
 
-1. After successful installation, open two terminal windows and **execute `npm start` in your first terminal and `npm test` in your second**. With those two commands running, you will load the app in Chrome by **navigating the browser to `http://localhost:3003`**. The term "localhost" means "your machine", and the number is the port. Your machine has many ports allowing many web servers to run on the same computer, with one server per port.
+1. After successful installation, open two terminal windows at the project folder and **execute `npm start` in your first terminal and `npm test` in your second**.
 
-1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode. It will highlight syntax errors and problems in your editor, saving tons of time.
+1. You will load the app in Chrome by **navigating the browser to `http://localhost:3003`**.
 
-### 🥷 Lead Developer
+1. If you haven't already, install the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) for VSCode.
 
-**Below, your Team Lead will discuss the tasks you need to complete.**
+### 🥷 Tasks
 
-Hey! Let's ensure you're up to speed with your **action items so far**.
+**Here are guidelines for completing your tasks:**
 
-- [x] The app is installed on your machine, with `start` and `test` scripts running in terminals.
-- [x] You studied the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/), and saw it loading different content at every reload.
-- [x] You loaded your app in `http://localhost:3003`.
+- If you look inside the `frontend` folder you will notice it contains, among other assets, two scripts: `data.js` and `index.js`. If you inspect the head element of the `index.html` document, you will find both scripts being loaded there.
 
-Awesome! As you complete your tasks, tests will start passing in the terminal. **Keep going until all tests are in the green!**
+- A single page can load many scripts, and whatever variables exist at the top level of each script are accessible by any scripts executing later. In this case, we include `data.js` first because we want the data it contains to be available to the `index.js` script.
 
-If you look inside the `frontend` folder you will notice it contains, among other assets, two scripts: `data.js` and `index.js`. If you inspect the head element of the `index.html` document, you will find both scripts loading there.
+- You will complete your tasks inside the `frontend/index.js` script. Do not modify any other files. Detailed instructions for each task can be found below.
 
-One page can load many scripts, and whatever variables exist at the top level of each script are accessible by any scripts executing later. In this case, we include `data.js` first because we want the data it contains to be available to the `index.js` script.
+- As you make progress, the behavior of the website will start matching that of the [Mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/).
 
-**With all that out of the way, open `index.js` and work on the following tasks you need to complete inside that script. You are not allowed to modify any other files.**
+- As you complete your tasks, tests will start passing in the terminal. Keep going until all tests are in the green!
 
-Have fun, and check out the Solution Video for this project if you need help!
+- Have fun, and check out the Solution Video for this project if you need help!
 
 #### 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
