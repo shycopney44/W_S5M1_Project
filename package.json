@@ -4,7 +4,7 @@
   "scripts": {
     "start": "fkill :3003 -f -s && node ./backend/server.js",
     "test": "cross-env NODE_ENV=testing jest --watchAll --verbose",
-    "fixit": "rm -rf node_modules package-lock.json && npm cache clean --force && npm i"
+    "fixit": "rm -rf node_modules package-lock.json && npm i"
   },
   "license": "MIT",
   "devDependencies": {
