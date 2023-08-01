@@ -60,7 +60,7 @@ Awesome! As you complete your tasks, tests will start passing in the terminal. *
 
 If you look inside the `frontend` folder you will notice it contains, among other assets, two scripts: `data.js` and `index.js`. If you inspect the head element of the `index.html` document, you will find both scripts loading there.
 
-One page can load many scripts, and whatever variables exist at the top level of each script are accessible by any scripts executing later. In this case, we include `data.js` first because we want the data it contains to be available to the `index.js` script. 
+One page can load many scripts, and whatever variables exist at the top level of each script are accessible by any scripts executing later. In this case, we include `data.js` first because we want the data it contains to be available to the `index.js` script.
 
 **With all that out of the way, open `index.js` and work on the following tasks you need to complete inside that script. You are not allowed to modify any other files.**
 
@@ -192,7 +192,7 @@ You will need `setInterval` and optionally `clearInterval` (research this!). The
   <summary>Click to read</summary>
 
   ---
-This widget will show a random person from the `people` array along with some data related to the person. 
+This widget will show a random person from the `people` array along with some data related to the person.
 
 Start by selecting a random person from the `people` array in `data.js` using `Math.random`.
 
@@ -287,7 +287,7 @@ This part of the product is a Single Page Application, so the HTML is mostly emp
 <details>
   <summary>My page does not work! How do I debug it?</summary>
 
-Save your changes, and reload the site in Chrome. If your code has a syntax problem, the app will print error messages in the console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem originates) and see if your variables contain the data you think they do. 
+Save your changes, and reload the site in Chrome. If your code has a syntax problem, the app will print error messages in the console. Focus on the first message. Place console logs right before the crash site (errors usually inform of the line number where the problem originates) and see if your variables contain the data you think they do.
 
 Suppose there are no errors, but the page is not doing what it should. In that case, the debugging technique is similar: put console logs to ensure that the code you are working on is executing and check that all variables in the area hold the correct data.
 
@@ -357,7 +357,7 @@ Give ChatGPT the following input for a detailed breakdown:
 ```txt
 Hello, I'm looking at a JavaScript project on GitHub, and inside the package.json file I am seeing the following "script":
 
-"start": "fkill :3003 -s && node ./backend/server.js"
+"start": "fkill :3003 -f -s && node ./backend/server.js"
 
 Can you explain in detail, but with simple terms, to an audience of inexperienced web developers, what the "start" script is doing?
 ```
