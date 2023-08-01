@@ -50,7 +50,7 @@ You can find a detailed mock [HERE](https://bloominstituteoftechnology.github.io
 
 - You will complete your tasks inside the `frontend/index.js` script. Do not modify any other files. Detailed instructions for each task can be found below.
 
-- As you make progress, the behavior of the website will start matching that of the [Mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/).
+- As you make progress, the behavior of the website will start matching that of the [mock](https://bloominstituteoftechnology.github.io/W_U2_S5M1_module_project/).
 
 - As you complete your tasks, tests will start passing in the terminal. Keep going until all tests are in the green!
 
