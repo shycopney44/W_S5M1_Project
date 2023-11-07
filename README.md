@@ -56,6 +56,10 @@ You can find a detailed mock [HERE](https://bloominstituteoftechnology.github.io
 
 - Have fun, and check out the Solution Video for this project if you need help!
 
+**WARNING**
+
+❗ Most of the following tasks involve setting text in the DOM using JavaScript. Please, do not use the `innerText` property of elements to set text! The `textContent` prop should be used instead. The reason is that `innerText` doesn't work in the tests. Read about the differences between the two properties [HERE](https://stackoverflow.com/a/35213639).
+
 #### 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
 
 <details>
